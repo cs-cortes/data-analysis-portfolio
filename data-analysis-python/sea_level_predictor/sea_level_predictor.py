@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import linregress
 
 def draw_plot():
-    #plt.clf()
+    
     # Read data from file
     df = pd.read_csv('epa-sea-level.csv')
 
@@ -28,9 +28,7 @@ def draw_plot():
              color = 'darkorange',
              linewidth = 1.5, 
              label = '1880-2050 fit'
-
              )
-    # plt.legend()
  
     # Create second line of best fit
     df_re = df[df['Year'] >= 2000]
@@ -61,7 +59,6 @@ def draw_plot():
         edgecolor = 'gray',
         framealpha=0.85
     )
-
     
     # Save plot and return data for testing (DO NOT MODIFY)
     plt.savefig('sea_level_plot.png')
