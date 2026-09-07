@@ -51,6 +51,8 @@ The dataset follows a relational database structure in which the tables are conn
 
 The relationships between the tables were reviewed and validated before performing the SQL analysis.
 
+![Database Schema](images/Online Shop.png)
+
 ## Tools & Technologies
 
 * **PostgreSQL** — Relational database management system
