@@ -72,6 +72,9 @@ online-shop/
 │   ├── raw/
 │   └── clean/
 │
+├── images/
+│   └── Online Shop.png
+│
 ├── notebooks/
 │   └── online_shop_analysis.ipynb
 │
@@ -84,7 +87,9 @@ online-shop/
 └── README.md
 ```
 
-The `data` directory contains the raw and cleaned datasets used during the analysis.
+The `data` directory was used locally to store the raw and cleaned datasets. The dataset files are not included in this repository.
+
+The `images` directory contains the database schema used to document the relational structure of the project.
 
 The `notebooks` directory contains the Python-based data profiling and visualization work.
 
@@ -185,7 +190,6 @@ This project demonstrates the use of:
 * `RANK()`
 * `PARTITION BY`
 * `ORDER BY`
-* `LIMIT`
 * Data aggregation and segmentation
 * Relational data analysis
 
