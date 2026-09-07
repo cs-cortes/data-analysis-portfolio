@@ -6,7 +6,7 @@ This project analyzes data from an e-commerce business using PostgreSQL and SQL 
 
 The project uses a relational database containing information about customers, orders, order items, products, suppliers, payments, reviews, and shipments.
 
-The analysis focuses on data exploration, customer segmentation, product performance, revenue analysis, and ranking using SQL. Python and Jupyter Notebook are used for data profiling and visualization.
+The analysis focuses on data exploration, customer segmentation, product performance, revenue analysis, and product ranking using SQL. Python and Jupyter Notebook are used for data profiling and visualization.
 
 ## Objectives
 
@@ -14,13 +14,12 @@ The analysis focuses on data exploration, customer segmentation, product perform
 * Segment customers based on their total spending.
 * Identify the products generating the highest revenue.
 * Analyze product performance within each category.
-* Calculate key sales metrics such as total orders, total revenue, and average order value.
 * Apply SQL techniques to extract and transform information from a relational database.
 * Present the main findings using clear and reproducible analysis.
 
 ## Dataset
 
-The project uses the **Online Shop 2024** dataset, a relational e-commerce dataset designed to simulate an online shopping business.
+The project uses the **Online Shop 2024** dataset by Martha Dimgba, a relational e-commerce dataset designed to simulate an online shopping business.
 
 The database contains eight related tables:
 
@@ -35,11 +34,22 @@ The database contains eight related tables:
 | `reviews`     | Product reviews                 |
 | `shipments`   | Shipment information            |
 
-The dataset contains approximately 10,000 customers, 15,000 orders, 20,000 order items, 2,000 products, 100 suppliers, 15,000 payments, 1,106 reviews, and 15,000 shipments.
+The dataset contains approximately:
+
+* 10,000 customers
+* 15,000 orders
+* 20,000 order items
+* 2,000 products
+* 100 suppliers
+* 15,000 payments
+* 1,106 reviews
+* 15,000 shipments
 
 ## Database Schema
 
 The dataset follows a relational database structure in which the tables are connected through primary and foreign keys.
+
+The relationships between the tables were reviewed and validated before performing the SQL analysis.
 
 ## Tools & Technologies
 
@@ -49,7 +59,7 @@ The dataset follows a relational database structure in which the tables are conn
 * **Pandas** — Data manipulation and profiling
 * **Matplotlib** — Data visualization
 * **Jupyter Notebook** — Analysis documentation and visualization
-* **GitHub** — Project versioning and portfolio
+* **GitHub** — Project documentation and portfolio
 
 ## Project Structure
 
@@ -94,6 +104,8 @@ The profiling process included:
 * Primary and foreign key validation
 
 The profiling results were used to better understand the structure and quality of the data before loading the datasets into PostgreSQL.
+
+## SQL Analysis
 
 ### 1. Customer Analysis
 
@@ -145,12 +157,10 @@ Products were ranked within their respective categories using the `RANK()` windo
 
 The analysis identified the highest-revenue product in each category.
 
-This analysis demonstrated how window functions can be used to perform rankings while maintaining the category-level context.
+This analysis demonstrated how window functions can be used to perform rankings while maintaining category-level context.
 
 ## Key Findings
 
-* The dataset contains 15,000 orders generating approximately $42.5 million in total revenue.
-* The average order value is approximately $2,833.05.
 * The three highest-spending customers each placed only two orders, showing that order frequency alone does not explain total customer spending.
 * Most customers belong to the Low or Medium spending segments, representing 81.05% of the customer base.
 * Water Bottle generated the highest revenue among the analyzed products, despite not having the highest unit sales.
@@ -165,7 +175,7 @@ This project demonstrates the use of:
 * `JOIN`
 * `LEFT JOIN`
 * `GROUP BY`
-* Aggregate functions (`COUNT`, `SUM`, `AVG`)
+* Aggregate functions (`COUNT`, `SUM`)
 * `COALESCE`
 * `CASE WHEN`
 * CTEs (`WITH`)
@@ -184,6 +194,7 @@ Potential extensions of the project include:
 * Revenue analysis by product category
 * Repeat customer analysis
 * Average order value by customer segment
+* Overall Average Order Value (AOV)
 * Payment status analysis
 * Shipment performance analysis
 * Review and rating analysis
@@ -194,11 +205,10 @@ Potential extensions of the project include:
 
 This project provided an opportunity to analyze a relational e-commerce dataset using PostgreSQL and SQL while applying practical data analysis techniques.
 
-The analysis demonstrated how SQL can be used to transform raw relational data into meaningful metrics and insights about customers, orders, and products.
+The analysis demonstrated how SQL can be used to transform relational data into meaningful metrics and insights about customers and products.
 
 The project also combined SQL analysis with Python-based data profiling and visualization, creating a reproducible workflow for exploring and communicating data-driven findings.
 
 ## Data Source
 
-[Online Shop 2024 — Kaggle](https://www.kaggle.com/)
-
+[Online Shop 2024 — Kaggle](https://www.kaggle.com/datasets/marthadimgba/online-shop-2024)
