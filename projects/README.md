@@ -51,7 +51,7 @@ The dataset follows a relational database structure in which the tables are conn
 
 The relationships between the tables were reviewed and validated before performing the SQL analysis.
 
-![Database Schema](images/Online Shop.png)
+![Database Schema](images/Online%20Shop.png)
 
 ## Tools & Technologies
 
