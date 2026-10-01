@@ -340,14 +340,15 @@ cyclistic-bike-share-analysis/
 ├── notebooks/
 │   └── data-trip.ipynb
 │
-├── images/
-│   ├── user_type_analysis.png
-│   ├── bike_type_analysis.png
-│   ├── ride_duration_analysis.png
-│   └── temporal_analysis.png
-│
-└── data/
-    └── README.md
+└── images/
+    ├── user_type_ride_volume.png
+    ├── monthly_ride_volume_by_user_type.png
+    ├── rides_by_day_of_week_and_user_type.png
+    ├── rides_by_hour_and_user_type.png
+    ├── bike_type_usage_by_user_type.png
+    ├── top10_starting_stations_casual.png
+    └── top10_starting_stations_member.png
+
 ```
 
 ---
