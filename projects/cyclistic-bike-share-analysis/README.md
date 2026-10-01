@@ -5,7 +5,7 @@ Analysis of **6,037,805 rides** (August 2025 – July 2026) to understand how **
 > Cyclistic is a fictional company from the Google Data Analytics case study. The data comes from Divvy (Chicago) and is used under its license.
 
 **Tools:** Python, Pandas, NumPy, Matplotlib, Jupyter Notebook
-**Full analysis:** [`notebooks/cyclistic_analysis.ipynb`](notebooks/cyclistic_analysis.ipynb)
+**Full analysis:** [`notebooks/data-trip.ipynb`](notebooks/data-trip.ipynb)
 
 ---
 
@@ -33,9 +33,6 @@ How do casual riders and annual members use Cyclistic bikes differently, and how
 4. **Casual rides are longer and more variable.** Median 11.1 vs 8.6 minutes (about 29% higher), and an interquartile range of 14.1 vs 9.6 minutes.
 5. **Casual starts are concentrated in a few lakefront and tourist locations.** Navy Pier alone has 54,838 casual rides (2.5% of all casual rides), 2.4× the top member station. Member starts are spread across downtown streets (Wells St, Clinton St, Canal St).
 6. **Bike type does not separate the groups.** Electric bikes are the majority for both (71.5% vs 67.1%).
-
-![Rides by user type](images/user_type_analysis.png)
-![Temporal patterns](images/temporal_analysis.png)
 
 ---
 
@@ -85,7 +82,7 @@ Coordinates and categories (`member_casual`, `rideable_type`) were validated wit
 
 ```text
 ├── README.md
-├── notebooks/   # cyclistic_analysis.ipynb
-├── images/      # charts used in this README
-└── data/        # download instructions only
+├── notebooks/   
+└── images/      
+
 ```
