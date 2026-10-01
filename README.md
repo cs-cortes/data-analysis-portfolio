@@ -97,7 +97,7 @@ Key areas include:
 * Exploratory analysis
 * SQL-based analysis
 
-**Project:** [`projects/online-shop-analysis`](./projects/online-shop-analysis)
+**Project:** [`projects/online-shop-analysis`](./projects/online-shop)
 
 ---
 
